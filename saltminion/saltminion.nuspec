@@ -8,24 +8,28 @@
     <owners>Derek Murawsky, Alex Clay</owners>
     <summary>Salt Minion Installer</summary>
     <description>
-	This package installs a salt minion on your system as a windows service. The Salt minion receives commands from the central Salt master and replies with the results of said commands.
-	Note that the Salt Minion Installer supports two arguments: /master=yoursaltmaster /minion-name=yourminionname.	These arguments can be passed to the package via the -installargs parameter.
-	Versions with a dash (2014.7.5-2) aren't supported by chocolatey. Currently the install script doesn't work around that constraint.
-	</description>
-    <projectUrl>https://github.com/barkingfoodog/ChocolateySaltMinion</projectUrl>
+	    This package installs a salt minion on your system as a windows service. The Salt minion receives commands from the central Salt master and replies with the results of said commands.
+    	Note that the Salt Minion Installer supports two arguments: /master=yoursaltmaster /minion-name=yourminionname.	These arguments can be passed to the package via the -installargs parameter.
+    	Versions with a dash (2014.7.5-2) aren't supported by chocolatey. Currently the install script doesn't work around that constraint.
+  	</description>
+    <projectUrl>https://saltstack.com</projectUrl>
+    <docsUrl>https://docs.saltstack.com/en/latest/</docsUrl>
+    <mailingListUrl>https://groups.google.com/forum/#!forum/salt-users</mailingListUrl>
+    <bugTrackerUrl>https://github.com/saltstack/salt/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/saltstack/salt</projectSourceUrl>
+    <packageSourceUrl>https://github.com/barkingfoodog/ChocolateySaltMinion</packageSourceUrl>
     <tags>salt minion admin saltstack</tags>
     <copyright></copyright>
     <licenseUrl>https://github.com/saltstack/salt/blob/develop/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/barkingfoodog/ChocolateySaltMinion/7637618d3d3c498236573d111b9962effce916f1/saltminion/salt_icon.png</iconUrl>
     <releaseNotes>
-	* Supports /master=yoursaltmaster and /minion-name=yourminionname parameters.
-	* Installs as a windows service .
-	* Uninstaller requires user confirmation. 
-	</releaseNotes>
-	<dependencies>
-		<dependency id="vcredist2008" version="9.0"/>
-	</dependencies>
+      * Updated to latest version
+      * Installer waits for the service to finish registering
+	  </releaseNotes>
+  	<dependencies>
+		  <dependency id="vcredist2008" version="9.0"/>
+	  </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
