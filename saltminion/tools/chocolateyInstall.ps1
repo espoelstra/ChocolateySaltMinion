@@ -1,10 +1,10 @@
 ﻿$packageName = 'saltminion'
 
 # Update these URLs and checksums when deploying a new version
-$url = 'https://repo.saltstack.com/windows/Salt-Minion-2016.3.1-x86-Setup.exe'
-$checksum = '4293e39ed3bfe90ac3a3a2dba66c2047'
-$url64 = 'https://repo.saltstack.com/windows/Salt-Minion-2016.3.1-AMD64-Setup.exe'
-$checksum64 = 'f3269cf009b9ecc8770dff430a5a74e0'
+$url = 'https://repo.saltstack.com/windows/Salt-Minion-2016.3.2-x86-Setup.exe'
+$checksum = '47b78e662bdcdf6db0b9084e4a4f56a2'
+$url64 = 'https://repo.saltstack.com/windows/Salt-Minion-2016.3.2-AMD64-Setup.exe'
+$checksum64 = '2c140f5adbae52bed40f58adec160296'
 
 # We need a path to download the file so we can manually update it
 $installerFilePath = "${env:chocolateyPackageFolder}\${env:chocolateyPackageName}-${env:chocolateyPackageVersion}.exe"

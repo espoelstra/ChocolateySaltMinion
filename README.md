@@ -12,7 +12,7 @@ Supports /master=yoursaltmaster and /minion-name=yourminionname parameters. Thes
 
 The version defined in the package can be overridden via the -version option.
 
-  `choco install saltminion -version 2016.3.1`
+  `choco install saltminion -version 2016.3.2`
   
 Chocolatey doesn't support dashes in a version. This prevents some packages from being created currently:
 - 2015.5.1-3
