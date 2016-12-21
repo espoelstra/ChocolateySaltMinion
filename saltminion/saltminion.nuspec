@@ -8,7 +8,7 @@
     <owners>Derek Murawsky, Alex Clay, espoelstra</owners>
     <summary>Salt Minion Installer</summary>
     <description>
-        This package installs a salt minion on your system as a windows service. The Salt minion receives commands from the central Salt master and replies with the results of said commands. It can also be used in standalone mode to apply states to a machine without a master by using `C:\salt\salt-call.bat --local state.sls <yoursls>` or similar commands with `--local`.
+        This package installs a salt minion on your system as a windows service. The Salt minion receives commands from the central Salt master and replies with the results of said commands. It can also be used in standalone mode to apply states to a machine without a master by using `C:\salt\salt-call.bat --local state.sls [yoursls]` or similar commands with `--local`.
             Note that this package supports two arguments: /master=yoursaltmaster and /minion=yourminionname (note the installer itself uses /minion-name, but parsing dictionary keys with the `-` is painful).
   These arguments can be passed to the package via the --params '/master=yoursaltmaster'. The custom salt master is recommended in most environments, the minion name is optional will default to the hostname if not supplied.
     </description>
